@@ -1,6 +1,6 @@
 # msu_scholars_api.ThesauriApi
 
-All URIs are relative to *https://localhosthttps://scholars.opb.msu.edu/ws/api/510/*
+All URIs are relative to *https://localhost/ws/api/510*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------

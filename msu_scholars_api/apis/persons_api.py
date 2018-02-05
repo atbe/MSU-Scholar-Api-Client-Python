@@ -315,20 +315,6 @@ class PersonsApi(object):
         if ('id' not in params) or (params['id'] is None):
             raise ValueError("Missing the required parameter `id` when calling `get_person`")
 
-        if 'id_classification' in params and not re.search('ID classification pattern', params['id_classification']):
-            raise ValueError("Invalid value for parameter `id_classification` when calling `get_person`, must conform to the pattern `/ID classification pattern/`")
-        if 'fields' in params and not re.search('Fields pattern', params['fields']):
-            raise ValueError("Invalid value for parameter `fields` when calling `get_person`, must conform to the pattern `/Fields pattern/`")
-        if 'locale' in params and not re.search('Locale pattern', params['locale']):
-            raise ValueError("Invalid value for parameter `locale` when calling `get_person`, must conform to the pattern `/Locale pattern/`")
-        if 'fallback_locale' in params and not re.search('Fallback locale pattern', params['fallback_locale']):
-            raise ValueError("Invalid value for parameter `fallback_locale` when calling `get_person`, must conform to the pattern `/Fallback locale pattern/`")
-        if 'rendering' in params and not re.search('Rendering pattern', params['rendering']):
-            raise ValueError("Invalid value for parameter `rendering` when calling `get_person`, must conform to the pattern `/Rendering pattern/`")
-        if 'return_used_content' in params and not re.search('ReturnUsedContent pattern', params['return_used_content']):
-            raise ValueError("Invalid value for parameter `return_used_content` when calling `get_person`, must conform to the pattern `/ReturnUsedContent pattern/`")
-        if 'navigation_link' in params and not re.search('NavigationLink pattern', params['navigation_link']):
-            raise ValueError("Invalid value for parameter `navigation_link` when calling `get_person`, must conform to the pattern `/NavigationLink pattern/`")
 
         collection_formats = {}
 
@@ -474,32 +460,6 @@ class PersonsApi(object):
             params[key] = val
         del params['kwargs']
 
-        if 'q' in params and not re.search('Search pattern', params['q']):
-            raise ValueError("Invalid value for parameter `q` when calling `list_active_persons`, must conform to the pattern `/Search pattern/`")
-        if 'order' in params and not re.search('Order pattern', params['order']):
-            raise ValueError("Invalid value for parameter `order` when calling `list_active_persons`, must conform to the pattern `/Order pattern/`")
-        if 'fields' in params and not re.search('Fields pattern', params['fields']):
-            raise ValueError("Invalid value for parameter `fields` when calling `list_active_persons`, must conform to the pattern `/Fields pattern/`")
-        if 'locale' in params and not re.search('Locale pattern', params['locale']):
-            raise ValueError("Invalid value for parameter `locale` when calling `list_active_persons`, must conform to the pattern `/Locale pattern/`")
-        if 'fallback_locale' in params and not re.search('Fallback locale pattern', params['fallback_locale']):
-            raise ValueError("Invalid value for parameter `fallback_locale` when calling `list_active_persons`, must conform to the pattern `/Fallback locale pattern/`")
-        if 'rendering' in params and not re.search('Rendering pattern', params['rendering']):
-            raise ValueError("Invalid value for parameter `rendering` when calling `list_active_persons`, must conform to the pattern `/Rendering pattern/`")
-        if 'linking_strategy' in params and not re.search('Linkingstrategy pattern', params['linking_strategy']):
-            raise ValueError("Invalid value for parameter `linking_strategy` when calling `list_active_persons`, must conform to the pattern `/Linkingstrategy pattern/`")
-        if 'return_used_content' in params and not re.search('ReturnUsedContent pattern', params['return_used_content']):
-            raise ValueError("Invalid value for parameter `return_used_content` when calling `list_active_persons`, must conform to the pattern `/ReturnUsedContent pattern/`")
-        if 'navigation_link' in params and not re.search('NavigationLink pattern', params['navigation_link']):
-            raise ValueError("Invalid value for parameter `navigation_link` when calling `list_active_persons`, must conform to the pattern `/NavigationLink pattern/`")
-        if 'size' in params and not re.search('Size pattern', params['size']):
-            raise ValueError("Invalid value for parameter `size` when calling `list_active_persons`, must conform to the pattern `/Size pattern/`")
-        if 'offset' in params and not re.search('Offset pattern', params['offset']):
-            raise ValueError("Invalid value for parameter `offset` when calling `list_active_persons`, must conform to the pattern `/Offset pattern/`")
-        if 'page' in params and not re.search('Page pattern', params['page']):
-            raise ValueError("Invalid value for parameter `page` when calling `list_active_persons`, must conform to the pattern `/Page pattern/`")
-        if 'page_size' in params and not re.search('PageSize pattern', params['page_size']):
-            raise ValueError("Invalid value for parameter `page_size` when calling `list_active_persons`, must conform to the pattern `/PageSize pattern/`")
 
         collection_formats = {}
 
@@ -656,32 +616,6 @@ class PersonsApi(object):
             params[key] = val
         del params['kwargs']
 
-        if 'q' in params and not re.search('Search pattern', params['q']):
-            raise ValueError("Invalid value for parameter `q` when calling `list_former_persons`, must conform to the pattern `/Search pattern/`")
-        if 'order' in params and not re.search('Order pattern', params['order']):
-            raise ValueError("Invalid value for parameter `order` when calling `list_former_persons`, must conform to the pattern `/Order pattern/`")
-        if 'fields' in params and not re.search('Fields pattern', params['fields']):
-            raise ValueError("Invalid value for parameter `fields` when calling `list_former_persons`, must conform to the pattern `/Fields pattern/`")
-        if 'locale' in params and not re.search('Locale pattern', params['locale']):
-            raise ValueError("Invalid value for parameter `locale` when calling `list_former_persons`, must conform to the pattern `/Locale pattern/`")
-        if 'fallback_locale' in params and not re.search('Fallback locale pattern', params['fallback_locale']):
-            raise ValueError("Invalid value for parameter `fallback_locale` when calling `list_former_persons`, must conform to the pattern `/Fallback locale pattern/`")
-        if 'rendering' in params and not re.search('Rendering pattern', params['rendering']):
-            raise ValueError("Invalid value for parameter `rendering` when calling `list_former_persons`, must conform to the pattern `/Rendering pattern/`")
-        if 'linking_strategy' in params and not re.search('Linkingstrategy pattern', params['linking_strategy']):
-            raise ValueError("Invalid value for parameter `linking_strategy` when calling `list_former_persons`, must conform to the pattern `/Linkingstrategy pattern/`")
-        if 'return_used_content' in params and not re.search('ReturnUsedContent pattern', params['return_used_content']):
-            raise ValueError("Invalid value for parameter `return_used_content` when calling `list_former_persons`, must conform to the pattern `/ReturnUsedContent pattern/`")
-        if 'navigation_link' in params and not re.search('NavigationLink pattern', params['navigation_link']):
-            raise ValueError("Invalid value for parameter `navigation_link` when calling `list_former_persons`, must conform to the pattern `/NavigationLink pattern/`")
-        if 'size' in params and not re.search('Size pattern', params['size']):
-            raise ValueError("Invalid value for parameter `size` when calling `list_former_persons`, must conform to the pattern `/Size pattern/`")
-        if 'offset' in params and not re.search('Offset pattern', params['offset']):
-            raise ValueError("Invalid value for parameter `offset` when calling `list_former_persons`, must conform to the pattern `/Offset pattern/`")
-        if 'page' in params and not re.search('Page pattern', params['page']):
-            raise ValueError("Invalid value for parameter `page` when calling `list_former_persons`, must conform to the pattern `/Page pattern/`")
-        if 'page_size' in params and not re.search('PageSize pattern', params['page_size']):
-            raise ValueError("Invalid value for parameter `page_size` when calling `list_former_persons`, must conform to the pattern `/PageSize pattern/`")
 
         collection_formats = {}
 
@@ -831,20 +765,6 @@ class PersonsApi(object):
         if ('id' not in params) or (params['id'] is None):
             raise ValueError("Missing the required parameter `id` when calling `list_person_activities`")
 
-        if 'id_classification' in params and not re.search('ID classification pattern', params['id_classification']):
-            raise ValueError("Invalid value for parameter `id_classification` when calling `list_person_activities`, must conform to the pattern `/ID classification pattern/`")
-        if 'fields' in params and not re.search('Fields pattern', params['fields']):
-            raise ValueError("Invalid value for parameter `fields` when calling `list_person_activities`, must conform to the pattern `/Fields pattern/`")
-        if 'locale' in params and not re.search('Locale pattern', params['locale']):
-            raise ValueError("Invalid value for parameter `locale` when calling `list_person_activities`, must conform to the pattern `/Locale pattern/`")
-        if 'fallback_locale' in params and not re.search('Fallback locale pattern', params['fallback_locale']):
-            raise ValueError("Invalid value for parameter `fallback_locale` when calling `list_person_activities`, must conform to the pattern `/Fallback locale pattern/`")
-        if 'rendering' in params and not re.search('Rendering pattern', params['rendering']):
-            raise ValueError("Invalid value for parameter `rendering` when calling `list_person_activities`, must conform to the pattern `/Rendering pattern/`")
-        if 'return_used_content' in params and not re.search('ReturnUsedContent pattern', params['return_used_content']):
-            raise ValueError("Invalid value for parameter `return_used_content` when calling `list_person_activities`, must conform to the pattern `/ReturnUsedContent pattern/`")
-        if 'navigation_link' in params and not re.search('NavigationLink pattern', params['navigation_link']):
-            raise ValueError("Invalid value for parameter `navigation_link` when calling `list_person_activities`, must conform to the pattern `/NavigationLink pattern/`")
 
         collection_formats = {}
 
@@ -983,20 +903,6 @@ class PersonsApi(object):
         if ('id' not in params) or (params['id'] is None):
             raise ValueError("Missing the required parameter `id` when calling `list_person_applications`")
 
-        if 'id_classification' in params and not re.search('ID classification pattern', params['id_classification']):
-            raise ValueError("Invalid value for parameter `id_classification` when calling `list_person_applications`, must conform to the pattern `/ID classification pattern/`")
-        if 'fields' in params and not re.search('Fields pattern', params['fields']):
-            raise ValueError("Invalid value for parameter `fields` when calling `list_person_applications`, must conform to the pattern `/Fields pattern/`")
-        if 'locale' in params and not re.search('Locale pattern', params['locale']):
-            raise ValueError("Invalid value for parameter `locale` when calling `list_person_applications`, must conform to the pattern `/Locale pattern/`")
-        if 'fallback_locale' in params and not re.search('Fallback locale pattern', params['fallback_locale']):
-            raise ValueError("Invalid value for parameter `fallback_locale` when calling `list_person_applications`, must conform to the pattern `/Fallback locale pattern/`")
-        if 'rendering' in params and not re.search('Rendering pattern', params['rendering']):
-            raise ValueError("Invalid value for parameter `rendering` when calling `list_person_applications`, must conform to the pattern `/Rendering pattern/`")
-        if 'return_used_content' in params and not re.search('ReturnUsedContent pattern', params['return_used_content']):
-            raise ValueError("Invalid value for parameter `return_used_content` when calling `list_person_applications`, must conform to the pattern `/ReturnUsedContent pattern/`")
-        if 'navigation_link' in params and not re.search('NavigationLink pattern', params['navigation_link']):
-            raise ValueError("Invalid value for parameter `navigation_link` when calling `list_person_applications`, must conform to the pattern `/NavigationLink pattern/`")
 
         collection_formats = {}
 
@@ -1135,20 +1041,6 @@ class PersonsApi(object):
         if ('id' not in params) or (params['id'] is None):
             raise ValueError("Missing the required parameter `id` when calling `list_person_awards`")
 
-        if 'id_classification' in params and not re.search('ID classification pattern', params['id_classification']):
-            raise ValueError("Invalid value for parameter `id_classification` when calling `list_person_awards`, must conform to the pattern `/ID classification pattern/`")
-        if 'fields' in params and not re.search('Fields pattern', params['fields']):
-            raise ValueError("Invalid value for parameter `fields` when calling `list_person_awards`, must conform to the pattern `/Fields pattern/`")
-        if 'locale' in params and not re.search('Locale pattern', params['locale']):
-            raise ValueError("Invalid value for parameter `locale` when calling `list_person_awards`, must conform to the pattern `/Locale pattern/`")
-        if 'fallback_locale' in params and not re.search('Fallback locale pattern', params['fallback_locale']):
-            raise ValueError("Invalid value for parameter `fallback_locale` when calling `list_person_awards`, must conform to the pattern `/Fallback locale pattern/`")
-        if 'rendering' in params and not re.search('Rendering pattern', params['rendering']):
-            raise ValueError("Invalid value for parameter `rendering` when calling `list_person_awards`, must conform to the pattern `/Rendering pattern/`")
-        if 'return_used_content' in params and not re.search('ReturnUsedContent pattern', params['return_used_content']):
-            raise ValueError("Invalid value for parameter `return_used_content` when calling `list_person_awards`, must conform to the pattern `/ReturnUsedContent pattern/`")
-        if 'navigation_link' in params and not re.search('NavigationLink pattern', params['navigation_link']):
-            raise ValueError("Invalid value for parameter `navigation_link` when calling `list_person_awards`, must conform to the pattern `/NavigationLink pattern/`")
 
         collection_formats = {}
 
@@ -1287,20 +1179,6 @@ class PersonsApi(object):
         if ('id' not in params) or (params['id'] is None):
             raise ValueError("Missing the required parameter `id` when calling `list_person_curriculum_vitae`")
 
-        if 'id_classification' in params and not re.search('ID classification pattern', params['id_classification']):
-            raise ValueError("Invalid value for parameter `id_classification` when calling `list_person_curriculum_vitae`, must conform to the pattern `/ID classification pattern/`")
-        if 'fields' in params and not re.search('Fields pattern', params['fields']):
-            raise ValueError("Invalid value for parameter `fields` when calling `list_person_curriculum_vitae`, must conform to the pattern `/Fields pattern/`")
-        if 'locale' in params and not re.search('Locale pattern', params['locale']):
-            raise ValueError("Invalid value for parameter `locale` when calling `list_person_curriculum_vitae`, must conform to the pattern `/Locale pattern/`")
-        if 'fallback_locale' in params and not re.search('Fallback locale pattern', params['fallback_locale']):
-            raise ValueError("Invalid value for parameter `fallback_locale` when calling `list_person_curriculum_vitae`, must conform to the pattern `/Fallback locale pattern/`")
-        if 'rendering' in params and not re.search('Rendering pattern', params['rendering']):
-            raise ValueError("Invalid value for parameter `rendering` when calling `list_person_curriculum_vitae`, must conform to the pattern `/Rendering pattern/`")
-        if 'return_used_content' in params and not re.search('ReturnUsedContent pattern', params['return_used_content']):
-            raise ValueError("Invalid value for parameter `return_used_content` when calling `list_person_curriculum_vitae`, must conform to the pattern `/ReturnUsedContent pattern/`")
-        if 'navigation_link' in params and not re.search('NavigationLink pattern', params['navigation_link']):
-            raise ValueError("Invalid value for parameter `navigation_link` when calling `list_person_curriculum_vitae`, must conform to the pattern `/NavigationLink pattern/`")
 
         collection_formats = {}
 
@@ -1439,20 +1317,6 @@ class PersonsApi(object):
         if ('id' not in params) or (params['id'] is None):
             raise ValueError("Missing the required parameter `id` when calling `list_person_fingerprints`")
 
-        if 'id_classification' in params and not re.search('ID classification pattern', params['id_classification']):
-            raise ValueError("Invalid value for parameter `id_classification` when calling `list_person_fingerprints`, must conform to the pattern `/ID classification pattern/`")
-        if 'fields' in params and not re.search('Fields pattern', params['fields']):
-            raise ValueError("Invalid value for parameter `fields` when calling `list_person_fingerprints`, must conform to the pattern `/Fields pattern/`")
-        if 'locale' in params and not re.search('Locale pattern', params['locale']):
-            raise ValueError("Invalid value for parameter `locale` when calling `list_person_fingerprints`, must conform to the pattern `/Locale pattern/`")
-        if 'fallback_locale' in params and not re.search('Fallback locale pattern', params['fallback_locale']):
-            raise ValueError("Invalid value for parameter `fallback_locale` when calling `list_person_fingerprints`, must conform to the pattern `/Fallback locale pattern/`")
-        if 'rendering' in params and not re.search('Rendering pattern', params['rendering']):
-            raise ValueError("Invalid value for parameter `rendering` when calling `list_person_fingerprints`, must conform to the pattern `/Rendering pattern/`")
-        if 'return_used_content' in params and not re.search('ReturnUsedContent pattern', params['return_used_content']):
-            raise ValueError("Invalid value for parameter `return_used_content` when calling `list_person_fingerprints`, must conform to the pattern `/ReturnUsedContent pattern/`")
-        if 'navigation_link' in params and not re.search('NavigationLink pattern', params['navigation_link']):
-            raise ValueError("Invalid value for parameter `navigation_link` when calling `list_person_fingerprints`, must conform to the pattern `/NavigationLink pattern/`")
 
         collection_formats = {}
 
@@ -1591,20 +1455,6 @@ class PersonsApi(object):
         if ('id' not in params) or (params['id'] is None):
             raise ValueError("Missing the required parameter `id` when calling `list_person_press_media`")
 
-        if 'id_classification' in params and not re.search('ID classification pattern', params['id_classification']):
-            raise ValueError("Invalid value for parameter `id_classification` when calling `list_person_press_media`, must conform to the pattern `/ID classification pattern/`")
-        if 'fields' in params and not re.search('Fields pattern', params['fields']):
-            raise ValueError("Invalid value for parameter `fields` when calling `list_person_press_media`, must conform to the pattern `/Fields pattern/`")
-        if 'locale' in params and not re.search('Locale pattern', params['locale']):
-            raise ValueError("Invalid value for parameter `locale` when calling `list_person_press_media`, must conform to the pattern `/Locale pattern/`")
-        if 'fallback_locale' in params and not re.search('Fallback locale pattern', params['fallback_locale']):
-            raise ValueError("Invalid value for parameter `fallback_locale` when calling `list_person_press_media`, must conform to the pattern `/Fallback locale pattern/`")
-        if 'rendering' in params and not re.search('Rendering pattern', params['rendering']):
-            raise ValueError("Invalid value for parameter `rendering` when calling `list_person_press_media`, must conform to the pattern `/Rendering pattern/`")
-        if 'return_used_content' in params and not re.search('ReturnUsedContent pattern', params['return_used_content']):
-            raise ValueError("Invalid value for parameter `return_used_content` when calling `list_person_press_media`, must conform to the pattern `/ReturnUsedContent pattern/`")
-        if 'navigation_link' in params and not re.search('NavigationLink pattern', params['navigation_link']):
-            raise ValueError("Invalid value for parameter `navigation_link` when calling `list_person_press_media`, must conform to the pattern `/NavigationLink pattern/`")
 
         collection_formats = {}
 
@@ -1743,20 +1593,6 @@ class PersonsApi(object):
         if ('id' not in params) or (params['id'] is None):
             raise ValueError("Missing the required parameter `id` when calling `list_person_prizes`")
 
-        if 'id_classification' in params and not re.search('ID classification pattern', params['id_classification']):
-            raise ValueError("Invalid value for parameter `id_classification` when calling `list_person_prizes`, must conform to the pattern `/ID classification pattern/`")
-        if 'fields' in params and not re.search('Fields pattern', params['fields']):
-            raise ValueError("Invalid value for parameter `fields` when calling `list_person_prizes`, must conform to the pattern `/Fields pattern/`")
-        if 'locale' in params and not re.search('Locale pattern', params['locale']):
-            raise ValueError("Invalid value for parameter `locale` when calling `list_person_prizes`, must conform to the pattern `/Locale pattern/`")
-        if 'fallback_locale' in params and not re.search('Fallback locale pattern', params['fallback_locale']):
-            raise ValueError("Invalid value for parameter `fallback_locale` when calling `list_person_prizes`, must conform to the pattern `/Fallback locale pattern/`")
-        if 'rendering' in params and not re.search('Rendering pattern', params['rendering']):
-            raise ValueError("Invalid value for parameter `rendering` when calling `list_person_prizes`, must conform to the pattern `/Rendering pattern/`")
-        if 'return_used_content' in params and not re.search('ReturnUsedContent pattern', params['return_used_content']):
-            raise ValueError("Invalid value for parameter `return_used_content` when calling `list_person_prizes`, must conform to the pattern `/ReturnUsedContent pattern/`")
-        if 'navigation_link' in params and not re.search('NavigationLink pattern', params['navigation_link']):
-            raise ValueError("Invalid value for parameter `navigation_link` when calling `list_person_prizes`, must conform to the pattern `/NavigationLink pattern/`")
 
         collection_formats = {}
 
@@ -1895,20 +1731,6 @@ class PersonsApi(object):
         if ('id' not in params) or (params['id'] is None):
             raise ValueError("Missing the required parameter `id` when calling `list_person_projects`")
 
-        if 'id_classification' in params and not re.search('ID classification pattern', params['id_classification']):
-            raise ValueError("Invalid value for parameter `id_classification` when calling `list_person_projects`, must conform to the pattern `/ID classification pattern/`")
-        if 'fields' in params and not re.search('Fields pattern', params['fields']):
-            raise ValueError("Invalid value for parameter `fields` when calling `list_person_projects`, must conform to the pattern `/Fields pattern/`")
-        if 'locale' in params and not re.search('Locale pattern', params['locale']):
-            raise ValueError("Invalid value for parameter `locale` when calling `list_person_projects`, must conform to the pattern `/Locale pattern/`")
-        if 'fallback_locale' in params and not re.search('Fallback locale pattern', params['fallback_locale']):
-            raise ValueError("Invalid value for parameter `fallback_locale` when calling `list_person_projects`, must conform to the pattern `/Fallback locale pattern/`")
-        if 'rendering' in params and not re.search('Rendering pattern', params['rendering']):
-            raise ValueError("Invalid value for parameter `rendering` when calling `list_person_projects`, must conform to the pattern `/Rendering pattern/`")
-        if 'return_used_content' in params and not re.search('ReturnUsedContent pattern', params['return_used_content']):
-            raise ValueError("Invalid value for parameter `return_used_content` when calling `list_person_projects`, must conform to the pattern `/ReturnUsedContent pattern/`")
-        if 'navigation_link' in params and not re.search('NavigationLink pattern', params['navigation_link']):
-            raise ValueError("Invalid value for parameter `navigation_link` when calling `list_person_projects`, must conform to the pattern `/NavigationLink pattern/`")
 
         collection_formats = {}
 
@@ -2047,20 +1869,6 @@ class PersonsApi(object):
         if ('id' not in params) or (params['id'] is None):
             raise ValueError("Missing the required parameter `id` when calling `list_person_research_outputs`")
 
-        if 'id_classification' in params and not re.search('ID classification pattern', params['id_classification']):
-            raise ValueError("Invalid value for parameter `id_classification` when calling `list_person_research_outputs`, must conform to the pattern `/ID classification pattern/`")
-        if 'fields' in params and not re.search('Fields pattern', params['fields']):
-            raise ValueError("Invalid value for parameter `fields` when calling `list_person_research_outputs`, must conform to the pattern `/Fields pattern/`")
-        if 'locale' in params and not re.search('Locale pattern', params['locale']):
-            raise ValueError("Invalid value for parameter `locale` when calling `list_person_research_outputs`, must conform to the pattern `/Locale pattern/`")
-        if 'fallback_locale' in params and not re.search('Fallback locale pattern', params['fallback_locale']):
-            raise ValueError("Invalid value for parameter `fallback_locale` when calling `list_person_research_outputs`, must conform to the pattern `/Fallback locale pattern/`")
-        if 'rendering' in params and not re.search('Rendering pattern', params['rendering']):
-            raise ValueError("Invalid value for parameter `rendering` when calling `list_person_research_outputs`, must conform to the pattern `/Rendering pattern/`")
-        if 'return_used_content' in params and not re.search('ReturnUsedContent pattern', params['return_used_content']):
-            raise ValueError("Invalid value for parameter `return_used_content` when calling `list_person_research_outputs`, must conform to the pattern `/ReturnUsedContent pattern/`")
-        if 'navigation_link' in params and not re.search('NavigationLink pattern', params['navigation_link']):
-            raise ValueError("Invalid value for parameter `navigation_link` when calling `list_person_research_outputs`, must conform to the pattern `/NavigationLink pattern/`")
 
         collection_formats = {}
 
@@ -2199,20 +2007,6 @@ class PersonsApi(object):
         if ('id' not in params) or (params['id'] is None):
             raise ValueError("Missing the required parameter `id` when calling `list_person_student_theses`")
 
-        if 'id_classification' in params and not re.search('ID classification pattern', params['id_classification']):
-            raise ValueError("Invalid value for parameter `id_classification` when calling `list_person_student_theses`, must conform to the pattern `/ID classification pattern/`")
-        if 'fields' in params and not re.search('Fields pattern', params['fields']):
-            raise ValueError("Invalid value for parameter `fields` when calling `list_person_student_theses`, must conform to the pattern `/Fields pattern/`")
-        if 'locale' in params and not re.search('Locale pattern', params['locale']):
-            raise ValueError("Invalid value for parameter `locale` when calling `list_person_student_theses`, must conform to the pattern `/Locale pattern/`")
-        if 'fallback_locale' in params and not re.search('Fallback locale pattern', params['fallback_locale']):
-            raise ValueError("Invalid value for parameter `fallback_locale` when calling `list_person_student_theses`, must conform to the pattern `/Fallback locale pattern/`")
-        if 'rendering' in params and not re.search('Rendering pattern', params['rendering']):
-            raise ValueError("Invalid value for parameter `rendering` when calling `list_person_student_theses`, must conform to the pattern `/Rendering pattern/`")
-        if 'return_used_content' in params and not re.search('ReturnUsedContent pattern', params['return_used_content']):
-            raise ValueError("Invalid value for parameter `return_used_content` when calling `list_person_student_theses`, must conform to the pattern `/ReturnUsedContent pattern/`")
-        if 'navigation_link' in params and not re.search('NavigationLink pattern', params['navigation_link']):
-            raise ValueError("Invalid value for parameter `navigation_link` when calling `list_person_student_theses`, must conform to the pattern `/NavigationLink pattern/`")
 
         collection_formats = {}
 
@@ -2358,32 +2152,6 @@ class PersonsApi(object):
             params[key] = val
         del params['kwargs']
 
-        if 'q' in params and not re.search('Search pattern', params['q']):
-            raise ValueError("Invalid value for parameter `q` when calling `list_persons`, must conform to the pattern `/Search pattern/`")
-        if 'order' in params and not re.search('Order pattern', params['order']):
-            raise ValueError("Invalid value for parameter `order` when calling `list_persons`, must conform to the pattern `/Order pattern/`")
-        if 'fields' in params and not re.search('Fields pattern', params['fields']):
-            raise ValueError("Invalid value for parameter `fields` when calling `list_persons`, must conform to the pattern `/Fields pattern/`")
-        if 'locale' in params and not re.search('Locale pattern', params['locale']):
-            raise ValueError("Invalid value for parameter `locale` when calling `list_persons`, must conform to the pattern `/Locale pattern/`")
-        if 'fallback_locale' in params and not re.search('Fallback locale pattern', params['fallback_locale']):
-            raise ValueError("Invalid value for parameter `fallback_locale` when calling `list_persons`, must conform to the pattern `/Fallback locale pattern/`")
-        if 'rendering' in params and not re.search('Rendering pattern', params['rendering']):
-            raise ValueError("Invalid value for parameter `rendering` when calling `list_persons`, must conform to the pattern `/Rendering pattern/`")
-        if 'linking_strategy' in params and not re.search('Linkingstrategy pattern', params['linking_strategy']):
-            raise ValueError("Invalid value for parameter `linking_strategy` when calling `list_persons`, must conform to the pattern `/Linkingstrategy pattern/`")
-        if 'return_used_content' in params and not re.search('ReturnUsedContent pattern', params['return_used_content']):
-            raise ValueError("Invalid value for parameter `return_used_content` when calling `list_persons`, must conform to the pattern `/ReturnUsedContent pattern/`")
-        if 'navigation_link' in params and not re.search('NavigationLink pattern', params['navigation_link']):
-            raise ValueError("Invalid value for parameter `navigation_link` when calling `list_persons`, must conform to the pattern `/NavigationLink pattern/`")
-        if 'size' in params and not re.search('Size pattern', params['size']):
-            raise ValueError("Invalid value for parameter `size` when calling `list_persons`, must conform to the pattern `/Size pattern/`")
-        if 'offset' in params and not re.search('Offset pattern', params['offset']):
-            raise ValueError("Invalid value for parameter `offset` when calling `list_persons`, must conform to the pattern `/Offset pattern/`")
-        if 'page' in params and not re.search('Page pattern', params['page']):
-            raise ValueError("Invalid value for parameter `page` when calling `list_persons`, must conform to the pattern `/Page pattern/`")
-        if 'page_size' in params and not re.search('PageSize pattern', params['page_size']):
-            raise ValueError("Invalid value for parameter `page_size` when calling `list_persons`, must conform to the pattern `/PageSize pattern/`")
 
         collection_formats = {}
 

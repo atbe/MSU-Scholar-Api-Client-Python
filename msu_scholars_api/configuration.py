@@ -45,7 +45,7 @@ class Configuration(object):
         Constructor
         """
         # Default Base url
-        self.host = "https://localhosthttps://scholars.opb.msu.edu/ws/api/510/"
+        self.host = "https://localhost/ws/api/510"
         # Default api client
         self.api_client = None
         # Temp file folder for downloading files
