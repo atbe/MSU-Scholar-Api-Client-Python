@@ -81,7 +81,7 @@ except ApiException as e:
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *https://localhost/ws/api/510*
+All URIs are relative to *https://scholars.opb.msu.edu/ws/api/510*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
