@@ -15389,13 +15389,10 @@
             "$ref": "#/definitions/WSLocalizedString"
           }
         },
-        "abstracts": {
+        "abstract": {
           "type": "array",
-          "xml": {
-            "name": "abstract"
-          },
           "items": {
-            "$ref": "#/definitions/WSLocalizedString"
+            "type": "string"
           }
         },
         "personAssociations": {
@@ -23112,13 +23109,10 @@
             "$ref": "#/definitions/WSERA2015FieldOfResearchAssociation"
           }
         },
-        "abstracts": {
+        "abstract": {
           "type": "array",
-          "xml": {
-            "name": "abstract"
-          },
           "items": {
-            "$ref": "#/definitions/WSLocalizedString"
+            "type": "string"
           }
         },
         "personAssociations": {
