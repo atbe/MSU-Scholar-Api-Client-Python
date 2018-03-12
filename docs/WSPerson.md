@@ -38,7 +38,7 @@ Name | Type | Description | Notes
 **will_take_phd_students** | **bool** | Only available when the proper configuration is enabled | [optional] [default to False]
 **phd_research_projects** | **str** | Only available when the proper configuration is enabled | [optional] 
 **private_address** | [**WSClassifiedAddress**](WSClassifiedAddress.md) | Only available when the proper configuration is enabled | [optional] 
-**visibilities** | [**list[WSVisibility]**](WSVisibility.md) |  | [optional] 
+**visibility** | [**list[WSVisibility]**](WSVisibility.md) |  | [optional] 
 **externalable_info** | [**WSExternalableInformation**](WSExternalableInformation.md) |  | [optional] 
 **info** | [**WSContentInformation**](WSContentInformation.md) |  | [optional] 
 **expert** | **bool** |  | [optional] [default to False]

@@ -32,29 +32,29 @@ class WSPublicationStatus(object):
     """
     swagger_types = {
         'current': 'bool',
-        'publication_statuses': 'list[WSClassification]',
+        'publication_status': 'list[WSClassification]',
         'publication_date': 'WSCompoundDate'
     }
 
     attribute_map = {
         'current': 'current',
-        'publication_statuses': 'publicationStatuses',
+        'publication_status': 'publicationStatus',
         'publication_date': 'publicationDate'
     }
 
-    def __init__(self, current=False, publication_statuses=None, publication_date=None):
+    def __init__(self, current=False, publication_status=None, publication_date=None):
         """
         WSPublicationStatus - a model defined in Swagger
         """
 
         self._current = None
-        self._publication_statuses = None
+        self._publication_status = None
         self._publication_date = None
 
         if current is not None:
           self.current = current
-        if publication_statuses is not None:
-          self.publication_statuses = publication_statuses
+        if publication_status is not None:
+          self.publication_status = publication_status
         if publication_date is not None:
           self.publication_date = publication_date
 
@@ -80,25 +80,25 @@ class WSPublicationStatus(object):
         self._current = current
 
     @property
-    def publication_statuses(self):
+    def publication_status(self):
         """
-        Gets the publication_statuses of this WSPublicationStatus.
+        Gets the publication_status of this WSPublicationStatus.
 
-        :return: The publication_statuses of this WSPublicationStatus.
+        :return: The publication_status of this WSPublicationStatus.
         :rtype: list[WSClassification]
         """
-        return self._publication_statuses
+        return self._publication_status
 
-    @publication_statuses.setter
-    def publication_statuses(self, publication_statuses):
+    @publication_status.setter
+    def publication_status(self, publication_status):
         """
-        Sets the publication_statuses of this WSPublicationStatus.
+        Sets the publication_status of this WSPublicationStatus.
 
-        :param publication_statuses: The publication_statuses of this WSPublicationStatus.
+        :param publication_status: The publication_status of this WSPublicationStatus.
         :type: list[WSClassification]
         """
 
-        self._publication_statuses = publication_statuses
+        self._publication_status = publication_status
 
     @property
     def publication_date(self):

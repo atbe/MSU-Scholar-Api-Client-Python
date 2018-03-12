@@ -33,38 +33,38 @@ class WSOrganisationRef(object):
     swagger_types = {
         'uuid': 'str',
         'link': 'WSNavigationLink',
-        'names': 'list[WSLocalizedString]',
-        'types': 'list[WSClassification]',
+        'name': 'list[WSLocalizedString]',
+        'type': 'list[WSClassification]',
         'ref': 'WSOrganisation'
     }
 
     attribute_map = {
         'uuid': 'uuid',
         'link': 'link',
-        'names': 'names',
-        'types': 'types',
+        'name': 'name',
+        'type': 'type',
         'ref': 'ref'
     }
 
-    def __init__(self, uuid=None, link=None, names=None, types=None, ref=None):
+    def __init__(self, uuid=None, link=None, name=None, type=None, ref=None):
         """
         WSOrganisationRef - a model defined in Swagger
         """
 
         self._uuid = None
         self._link = None
-        self._names = None
-        self._types = None
+        self._name = None
+        self._type = None
         self._ref = None
 
         if uuid is not None:
           self.uuid = uuid
         if link is not None:
           self.link = link
-        if names is not None:
-          self.names = names
-        if types is not None:
-          self.types = types
+        if name is not None:
+          self.name = name
+        if type is not None:
+          self.type = type
         if ref is not None:
           self.ref = ref
 
@@ -111,46 +111,46 @@ class WSOrganisationRef(object):
         self._link = link
 
     @property
-    def names(self):
+    def name(self):
         """
-        Gets the names of this WSOrganisationRef.
+        Gets the name of this WSOrganisationRef.
 
-        :return: The names of this WSOrganisationRef.
+        :return: The name of this WSOrganisationRef.
         :rtype: list[WSLocalizedString]
         """
-        return self._names
+        return self._name
 
-    @names.setter
-    def names(self, names):
+    @name.setter
+    def name(self, name):
         """
-        Sets the names of this WSOrganisationRef.
+        Sets the name of this WSOrganisationRef.
 
-        :param names: The names of this WSOrganisationRef.
+        :param name: The name of this WSOrganisationRef.
         :type: list[WSLocalizedString]
         """
 
-        self._names = names
+        self._name = name
 
     @property
-    def types(self):
+    def type(self):
         """
-        Gets the types of this WSOrganisationRef.
+        Gets the type of this WSOrganisationRef.
 
-        :return: The types of this WSOrganisationRef.
+        :return: The type of this WSOrganisationRef.
         :rtype: list[WSClassification]
         """
-        return self._types
+        return self._type
 
-    @types.setter
-    def types(self, types):
+    @type.setter
+    def type(self, type):
         """
-        Sets the types of this WSOrganisationRef.
+        Sets the type of this WSOrganisationRef.
 
-        :param types: The types of this WSOrganisationRef.
+        :param type: The type of this WSOrganisationRef.
         :type: list[WSClassification]
         """
 
-        self._types = types
+        self._type = type
 
     @property
     def ref(self):

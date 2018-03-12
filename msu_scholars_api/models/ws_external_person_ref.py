@@ -33,38 +33,38 @@ class WSExternalPersonRef(object):
     swagger_types = {
         'uuid': 'str',
         'link': 'WSNavigationLink',
-        'names': 'list[WSLocalizedString]',
-        'types': 'list[WSClassification]',
+        'name': 'list[WSLocalizedString]',
+        'type': 'list[WSClassification]',
         'ref': 'WSExternalPerson'
     }
 
     attribute_map = {
         'uuid': 'uuid',
         'link': 'link',
-        'names': 'names',
-        'types': 'types',
+        'name': 'name',
+        'type': 'type',
         'ref': 'ref'
     }
 
-    def __init__(self, uuid=None, link=None, names=None, types=None, ref=None):
+    def __init__(self, uuid=None, link=None, name=None, type=None, ref=None):
         """
         WSExternalPersonRef - a model defined in Swagger
         """
 
         self._uuid = None
         self._link = None
-        self._names = None
-        self._types = None
+        self._name = None
+        self._type = None
         self._ref = None
 
         if uuid is not None:
           self.uuid = uuid
         if link is not None:
           self.link = link
-        if names is not None:
-          self.names = names
-        if types is not None:
-          self.types = types
+        if name is not None:
+          self.name = name
+        if type is not None:
+          self.type = type
         if ref is not None:
           self.ref = ref
 
@@ -111,46 +111,46 @@ class WSExternalPersonRef(object):
         self._link = link
 
     @property
-    def names(self):
+    def name(self):
         """
-        Gets the names of this WSExternalPersonRef.
+        Gets the name of this WSExternalPersonRef.
 
-        :return: The names of this WSExternalPersonRef.
+        :return: The name of this WSExternalPersonRef.
         :rtype: list[WSLocalizedString]
         """
-        return self._names
+        return self._name
 
-    @names.setter
-    def names(self, names):
+    @name.setter
+    def name(self, name):
         """
-        Sets the names of this WSExternalPersonRef.
+        Sets the name of this WSExternalPersonRef.
 
-        :param names: The names of this WSExternalPersonRef.
+        :param name: The name of this WSExternalPersonRef.
         :type: list[WSLocalizedString]
         """
 
-        self._names = names
+        self._name = name
 
     @property
-    def types(self):
+    def type(self):
         """
-        Gets the types of this WSExternalPersonRef.
+        Gets the type of this WSExternalPersonRef.
 
-        :return: The types of this WSExternalPersonRef.
+        :return: The type of this WSExternalPersonRef.
         :rtype: list[WSClassification]
         """
-        return self._types
+        return self._type
 
-    @types.setter
-    def types(self, types):
+    @type.setter
+    def type(self, type):
         """
-        Sets the types of this WSExternalPersonRef.
+        Sets the type of this WSExternalPersonRef.
 
-        :param types: The types of this WSExternalPersonRef.
+        :param type: The type of this WSExternalPersonRef.
         :type: list[WSClassification]
         """
 
-        self._types = types
+        self._type = type
 
     @property
     def ref(self):

@@ -32,29 +32,29 @@ class WSKeywordGroup(object):
     """
     swagger_types = {
         'logical_name': 'str',
-        'types': 'list[WSClassification]',
+        'type': 'list[WSClassification]',
         'keywords': 'list[WSKeyword]'
     }
 
     attribute_map = {
         'logical_name': 'logicalName',
-        'types': 'types',
+        'type': 'type',
         'keywords': 'keywords'
     }
 
-    def __init__(self, logical_name=None, types=None, keywords=None):
+    def __init__(self, logical_name=None, type=None, keywords=None):
         """
         WSKeywordGroup - a model defined in Swagger
         """
 
         self._logical_name = None
-        self._types = None
+        self._type = None
         self._keywords = None
 
         if logical_name is not None:
           self.logical_name = logical_name
-        if types is not None:
-          self.types = types
+        if type is not None:
+          self.type = type
         if keywords is not None:
           self.keywords = keywords
 
@@ -80,25 +80,25 @@ class WSKeywordGroup(object):
         self._logical_name = logical_name
 
     @property
-    def types(self):
+    def type(self):
         """
-        Gets the types of this WSKeywordGroup.
+        Gets the type of this WSKeywordGroup.
 
-        :return: The types of this WSKeywordGroup.
+        :return: The type of this WSKeywordGroup.
         :rtype: list[WSClassification]
         """
-        return self._types
+        return self._type
 
-    @types.setter
-    def types(self, types):
+    @type.setter
+    def type(self, type):
         """
-        Sets the types of this WSKeywordGroup.
+        Sets the type of this WSKeywordGroup.
 
-        :param types: The types of this WSKeywordGroup.
+        :param type: The type of this WSKeywordGroup.
         :type: list[WSClassification]
         """
 
-        self._types = types
+        self._type = type
 
     @property
     def keywords(self):

@@ -35,19 +35,19 @@ class WSResearchOutput(object):
         'html_renderings': 'list[WSHtmlRendering]',
         'title': 'str',
         'sub_title': 'str',
-        'types': 'list[WSClassification]',
-        'categories': 'list[WSClassification]',
+        'type': 'list[WSClassification]',
+        'category': 'list[WSClassification]',
         'peer_review': 'bool',
         'international_peer_review': 'bool',
         'publication_statuses': 'list[WSPublicationStatus]',
-        'languages': 'list[WSClassification]',
+        'language': 'list[WSClassification]',
         'translated_titles': 'list[WSLocalizedString]',
         'translated_sub_titles': 'list[WSLocalizedString]',
         'number_of_pages': 'int',
         'field_of_research_associations': 'list[WSERA2015FieldOfResearchAssociation]',
         'abstract': 'list[str]',
         'person_associations': 'list[WSClassifiedAuthorAssociation]',
-        'organisations': 'list[WSOrganisationRef]',
+        'organisational_units': 'list[WSOrganisationRef]',
         'external_organisations': 'list[WSExternalOrganisationRef]',
         'managing_organisational_unit': 'WSOrganisationRef',
         'open_access_permissions': 'list[WSClassification]',
@@ -87,19 +87,19 @@ class WSResearchOutput(object):
         'html_renderings': 'htmlRenderings',
         'title': 'title',
         'sub_title': 'subTitle',
-        'types': 'types',
-        'categories': 'categories',
+        'type': 'type',
+        'category': 'category',
         'peer_review': 'peerReview',
         'international_peer_review': 'internationalPeerReview',
         'publication_statuses': 'publicationStatuses',
-        'languages': 'languages',
+        'language': 'language',
         'translated_titles': 'translatedTitles',
         'translated_sub_titles': 'translatedSubTitles',
         'number_of_pages': 'numberOfPages',
         'field_of_research_associations': 'fieldOfResearchAssociations',
         'abstract': 'abstract',
         'person_associations': 'personAssociations',
-        'organisations': 'organisations',
+        'organisational_units': 'organisationalUnits',
         'external_organisations': 'externalOrganisations',
         'managing_organisational_unit': 'managingOrganisationalUnit',
         'open_access_permissions': 'openAccessPermissions',
@@ -134,7 +134,7 @@ class WSResearchOutput(object):
         'article_processing_charge_amount': 'articleProcessingChargeAmount'
     }
 
-    def __init__(self, uuid=None, html_renderings=None, title=None, sub_title=None, types=None, categories=None, peer_review=False, international_peer_review=False, publication_statuses=None, languages=None, translated_titles=None, translated_sub_titles=None, number_of_pages=None, field_of_research_associations=None, abstract=None, person_associations=None, organisations=None, external_organisations=None, managing_organisational_unit=None, open_access_permissions=None, open_access_embargo_months=None, open_access_embargo_date=None, submission_year=None, main_research_area=None, electronic_versions=None, additional_files=None, links=None, article_processing_charge_paid=False, article_processing_charge_amount_in_article_processing_charge_currency=None, article_processing_charges_currency=None, keyword_groups=None, bibliographical_notes=None, descriptions=None, related_research_outputs=None, related_activities=None, related_press_media=None, related_impacts=None, related_projects=None, related_data_sets=None, related_prizes=None, related_student_theses=None, confidential=False, visibilities=None, workflows=None, externalable_info=None, info=None, total_scopus_citations=None, scopus_metrics=None, article_processing_charge_amount=None):
+    def __init__(self, uuid=None, html_renderings=None, title=None, sub_title=None, type=None, category=None, peer_review=False, international_peer_review=False, publication_statuses=None, language=None, translated_titles=None, translated_sub_titles=None, number_of_pages=None, field_of_research_associations=None, abstract=None, person_associations=None, organisational_units=None, external_organisations=None, managing_organisational_unit=None, open_access_permissions=None, open_access_embargo_months=None, open_access_embargo_date=None, submission_year=None, main_research_area=None, electronic_versions=None, additional_files=None, links=None, article_processing_charge_paid=False, article_processing_charge_amount_in_article_processing_charge_currency=None, article_processing_charges_currency=None, keyword_groups=None, bibliographical_notes=None, descriptions=None, related_research_outputs=None, related_activities=None, related_press_media=None, related_impacts=None, related_projects=None, related_data_sets=None, related_prizes=None, related_student_theses=None, confidential=False, visibilities=None, workflows=None, externalable_info=None, info=None, total_scopus_citations=None, scopus_metrics=None, article_processing_charge_amount=None):
         """
         WSResearchOutput - a model defined in Swagger
         """
@@ -143,19 +143,19 @@ class WSResearchOutput(object):
         self._html_renderings = None
         self._title = None
         self._sub_title = None
-        self._types = None
-        self._categories = None
+        self._type = None
+        self._category = None
         self._peer_review = None
         self._international_peer_review = None
         self._publication_statuses = None
-        self._languages = None
+        self._language = None
         self._translated_titles = None
         self._translated_sub_titles = None
         self._number_of_pages = None
         self._field_of_research_associations = None
         self._abstract = None
         self._person_associations = None
-        self._organisations = None
+        self._organisational_units = None
         self._external_organisations = None
         self._managing_organisational_unit = None
         self._open_access_permissions = None
@@ -197,18 +197,18 @@ class WSResearchOutput(object):
           self.title = title
         if sub_title is not None:
           self.sub_title = sub_title
-        if types is not None:
-          self.types = types
-        if categories is not None:
-          self.categories = categories
+        if type is not None:
+          self.type = type
+        if category is not None:
+          self.category = category
         if peer_review is not None:
           self.peer_review = peer_review
         if international_peer_review is not None:
           self.international_peer_review = international_peer_review
         if publication_statuses is not None:
           self.publication_statuses = publication_statuses
-        if languages is not None:
-          self.languages = languages
+        if language is not None:
+          self.language = language
         if translated_titles is not None:
           self.translated_titles = translated_titles
         if translated_sub_titles is not None:
@@ -221,8 +221,8 @@ class WSResearchOutput(object):
           self.abstract = abstract
         if person_associations is not None:
           self.person_associations = person_associations
-        if organisations is not None:
-          self.organisations = organisations
+        if organisational_units is not None:
+          self.organisational_units = organisational_units
         if external_organisations is not None:
           self.external_organisations = external_organisations
         if managing_organisational_unit is not None:
@@ -373,46 +373,46 @@ class WSResearchOutput(object):
         self._sub_title = sub_title
 
     @property
-    def types(self):
+    def type(self):
         """
-        Gets the types of this WSResearchOutput.
+        Gets the type of this WSResearchOutput.
 
-        :return: The types of this WSResearchOutput.
+        :return: The type of this WSResearchOutput.
         :rtype: list[WSClassification]
         """
-        return self._types
+        return self._type
 
-    @types.setter
-    def types(self, types):
+    @type.setter
+    def type(self, type):
         """
-        Sets the types of this WSResearchOutput.
+        Sets the type of this WSResearchOutput.
 
-        :param types: The types of this WSResearchOutput.
+        :param type: The type of this WSResearchOutput.
         :type: list[WSClassification]
         """
 
-        self._types = types
+        self._type = type
 
     @property
-    def categories(self):
+    def category(self):
         """
-        Gets the categories of this WSResearchOutput.
+        Gets the category of this WSResearchOutput.
 
-        :return: The categories of this WSResearchOutput.
+        :return: The category of this WSResearchOutput.
         :rtype: list[WSClassification]
         """
-        return self._categories
+        return self._category
 
-    @categories.setter
-    def categories(self, categories):
+    @category.setter
+    def category(self, category):
         """
-        Sets the categories of this WSResearchOutput.
+        Sets the category of this WSResearchOutput.
 
-        :param categories: The categories of this WSResearchOutput.
+        :param category: The category of this WSResearchOutput.
         :type: list[WSClassification]
         """
 
-        self._categories = categories
+        self._category = category
 
     @property
     def peer_review(self):
@@ -478,25 +478,25 @@ class WSResearchOutput(object):
         self._publication_statuses = publication_statuses
 
     @property
-    def languages(self):
+    def language(self):
         """
-        Gets the languages of this WSResearchOutput.
+        Gets the language of this WSResearchOutput.
 
-        :return: The languages of this WSResearchOutput.
+        :return: The language of this WSResearchOutput.
         :rtype: list[WSClassification]
         """
-        return self._languages
+        return self._language
 
-    @languages.setter
-    def languages(self, languages):
+    @language.setter
+    def language(self, language):
         """
-        Sets the languages of this WSResearchOutput.
+        Sets the language of this WSResearchOutput.
 
-        :param languages: The languages of this WSResearchOutput.
+        :param language: The language of this WSResearchOutput.
         :type: list[WSClassification]
         """
 
-        self._languages = languages
+        self._language = language
 
     @property
     def translated_titles(self):
@@ -627,25 +627,25 @@ class WSResearchOutput(object):
         self._person_associations = person_associations
 
     @property
-    def organisations(self):
+    def organisational_units(self):
         """
-        Gets the organisations of this WSResearchOutput.
+        Gets the organisational_units of this WSResearchOutput.
 
-        :return: The organisations of this WSResearchOutput.
+        :return: The organisational_units of this WSResearchOutput.
         :rtype: list[WSOrganisationRef]
         """
-        return self._organisations
+        return self._organisational_units
 
-    @organisations.setter
-    def organisations(self, organisations):
+    @organisational_units.setter
+    def organisational_units(self, organisational_units):
         """
-        Sets the organisations of this WSResearchOutput.
+        Sets the organisational_units of this WSResearchOutput.
 
-        :param organisations: The organisations of this WSResearchOutput.
+        :param organisational_units: The organisational_units of this WSResearchOutput.
         :type: list[WSOrganisationRef]
         """
 
-        self._organisations = organisations
+        self._organisational_units = organisational_units
 
     @property
     def external_organisations(self):

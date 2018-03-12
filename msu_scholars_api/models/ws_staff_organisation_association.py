@@ -37,9 +37,9 @@ class WSStaffOrganisationAssociation(object):
         'addresses': 'list[WSClassifiedAddress]',
         'emails': 'list[WSClassifiedValue]',
         'phone_numbers': 'list[WSClassifiedValue]',
-        'employment_types': 'list[WSClassification]',
+        'employment_type': 'list[WSClassification]',
         'web_addresses': 'list[WSClassifiedLocalizedValue]',
-        'organisation': 'WSOrganisationRef',
+        'organisational_unit': 'WSOrganisationRef',
         'period': 'WSDateRange',
         'keyword_groups': 'list[WSKeywordGroup]',
         'contract_types': 'list[WSClassification]',
@@ -57,9 +57,9 @@ class WSStaffOrganisationAssociation(object):
         'addresses': 'addresses',
         'emails': 'emails',
         'phone_numbers': 'phoneNumbers',
-        'employment_types': 'employmentTypes',
+        'employment_type': 'employmentType',
         'web_addresses': 'webAddresses',
-        'organisation': 'organisation',
+        'organisational_unit': 'organisationalUnit',
         'period': 'period',
         'keyword_groups': 'keywordGroups',
         'contract_types': 'contractTypes',
@@ -70,7 +70,7 @@ class WSStaffOrganisationAssociation(object):
         'primary_association': 'primaryAssociation'
     }
 
-    def __init__(self, id=None, person=None, affiliation_id=None, addresses=None, emails=None, phone_numbers=None, employment_types=None, web_addresses=None, organisation=None, period=None, keyword_groups=None, contract_types=None, staff_types=None, job_descriptions=None, job_titles=None, fte=None, primary_association=False):
+    def __init__(self, id=None, person=None, affiliation_id=None, addresses=None, emails=None, phone_numbers=None, employment_type=None, web_addresses=None, organisational_unit=None, period=None, keyword_groups=None, contract_types=None, staff_types=None, job_descriptions=None, job_titles=None, fte=None, primary_association=False):
         """
         WSStaffOrganisationAssociation - a model defined in Swagger
         """
@@ -81,9 +81,9 @@ class WSStaffOrganisationAssociation(object):
         self._addresses = None
         self._emails = None
         self._phone_numbers = None
-        self._employment_types = None
+        self._employment_type = None
         self._web_addresses = None
-        self._organisation = None
+        self._organisational_unit = None
         self._period = None
         self._keyword_groups = None
         self._contract_types = None
@@ -105,12 +105,12 @@ class WSStaffOrganisationAssociation(object):
           self.emails = emails
         if phone_numbers is not None:
           self.phone_numbers = phone_numbers
-        if employment_types is not None:
-          self.employment_types = employment_types
+        if employment_type is not None:
+          self.employment_type = employment_type
         if web_addresses is not None:
           self.web_addresses = web_addresses
-        if organisation is not None:
-          self.organisation = organisation
+        if organisational_unit is not None:
+          self.organisational_unit = organisational_unit
         if period is not None:
           self.period = period
         if keyword_groups is not None:
@@ -255,25 +255,25 @@ class WSStaffOrganisationAssociation(object):
         self._phone_numbers = phone_numbers
 
     @property
-    def employment_types(self):
+    def employment_type(self):
         """
-        Gets the employment_types of this WSStaffOrganisationAssociation.
+        Gets the employment_type of this WSStaffOrganisationAssociation.
 
-        :return: The employment_types of this WSStaffOrganisationAssociation.
+        :return: The employment_type of this WSStaffOrganisationAssociation.
         :rtype: list[WSClassification]
         """
-        return self._employment_types
+        return self._employment_type
 
-    @employment_types.setter
-    def employment_types(self, employment_types):
+    @employment_type.setter
+    def employment_type(self, employment_type):
         """
-        Sets the employment_types of this WSStaffOrganisationAssociation.
+        Sets the employment_type of this WSStaffOrganisationAssociation.
 
-        :param employment_types: The employment_types of this WSStaffOrganisationAssociation.
+        :param employment_type: The employment_type of this WSStaffOrganisationAssociation.
         :type: list[WSClassification]
         """
 
-        self._employment_types = employment_types
+        self._employment_type = employment_type
 
     @property
     def web_addresses(self):
@@ -297,25 +297,25 @@ class WSStaffOrganisationAssociation(object):
         self._web_addresses = web_addresses
 
     @property
-    def organisation(self):
+    def organisational_unit(self):
         """
-        Gets the organisation of this WSStaffOrganisationAssociation.
+        Gets the organisational_unit of this WSStaffOrganisationAssociation.
 
-        :return: The organisation of this WSStaffOrganisationAssociation.
+        :return: The organisational_unit of this WSStaffOrganisationAssociation.
         :rtype: WSOrganisationRef
         """
-        return self._organisation
+        return self._organisational_unit
 
-    @organisation.setter
-    def organisation(self, organisation):
+    @organisational_unit.setter
+    def organisational_unit(self, organisational_unit):
         """
-        Sets the organisation of this WSStaffOrganisationAssociation.
+        Sets the organisational_unit of this WSStaffOrganisationAssociation.
 
-        :param organisation: The organisation of this WSStaffOrganisationAssociation.
+        :param organisational_unit: The organisational_unit of this WSStaffOrganisationAssociation.
         :type: WSOrganisationRef
         """
 
-        self._organisation = organisation
+        self._organisational_unit = organisational_unit
 
     @property
     def period(self):

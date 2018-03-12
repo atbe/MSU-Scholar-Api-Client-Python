@@ -35,8 +35,8 @@ class WSClassifiedAuthorAssociation(object):
         'person': 'WSPersonRef',
         'external_person': 'WSExternalPersonRef',
         'name': 'WSName',
-        'person_roles': 'list[WSClassification]',
-        'organisations': 'list[WSOrganisationRef]',
+        'person_role': 'list[WSClassification]',
+        'organisational_units': 'list[WSOrganisationRef]',
         'external_organisations': 'list[WSExternalOrganisationRef]',
         'group_author': 'str',
         'contribution_description': 'str',
@@ -50,8 +50,8 @@ class WSClassifiedAuthorAssociation(object):
         'person': 'person',
         'external_person': 'externalPerson',
         'name': 'name',
-        'person_roles': 'personRoles',
-        'organisations': 'organisations',
+        'person_role': 'personRole',
+        'organisational_units': 'organisationalUnits',
         'external_organisations': 'externalOrganisations',
         'group_author': 'groupAuthor',
         'contribution_description': 'contributionDescription',
@@ -60,7 +60,7 @@ class WSClassifiedAuthorAssociation(object):
         'hidden': 'hidden'
     }
 
-    def __init__(self, id=None, person=None, external_person=None, name=None, person_roles=None, organisations=None, external_organisations=None, group_author=None, contribution_description=None, contribution_percentage=None, countries=None, hidden=False):
+    def __init__(self, id=None, person=None, external_person=None, name=None, person_role=None, organisational_units=None, external_organisations=None, group_author=None, contribution_description=None, contribution_percentage=None, countries=None, hidden=False):
         """
         WSClassifiedAuthorAssociation - a model defined in Swagger
         """
@@ -69,8 +69,8 @@ class WSClassifiedAuthorAssociation(object):
         self._person = None
         self._external_person = None
         self._name = None
-        self._person_roles = None
-        self._organisations = None
+        self._person_role = None
+        self._organisational_units = None
         self._external_organisations = None
         self._group_author = None
         self._contribution_description = None
@@ -86,10 +86,10 @@ class WSClassifiedAuthorAssociation(object):
           self.external_person = external_person
         if name is not None:
           self.name = name
-        if person_roles is not None:
-          self.person_roles = person_roles
-        if organisations is not None:
-          self.organisations = organisations
+        if person_role is not None:
+          self.person_role = person_role
+        if organisational_units is not None:
+          self.organisational_units = organisational_units
         if external_organisations is not None:
           self.external_organisations = external_organisations
         if group_author is not None:
@@ -188,46 +188,46 @@ class WSClassifiedAuthorAssociation(object):
         self._name = name
 
     @property
-    def person_roles(self):
+    def person_role(self):
         """
-        Gets the person_roles of this WSClassifiedAuthorAssociation.
+        Gets the person_role of this WSClassifiedAuthorAssociation.
 
-        :return: The person_roles of this WSClassifiedAuthorAssociation.
+        :return: The person_role of this WSClassifiedAuthorAssociation.
         :rtype: list[WSClassification]
         """
-        return self._person_roles
+        return self._person_role
 
-    @person_roles.setter
-    def person_roles(self, person_roles):
+    @person_role.setter
+    def person_role(self, person_role):
         """
-        Sets the person_roles of this WSClassifiedAuthorAssociation.
+        Sets the person_role of this WSClassifiedAuthorAssociation.
 
-        :param person_roles: The person_roles of this WSClassifiedAuthorAssociation.
+        :param person_role: The person_role of this WSClassifiedAuthorAssociation.
         :type: list[WSClassification]
         """
 
-        self._person_roles = person_roles
+        self._person_role = person_role
 
     @property
-    def organisations(self):
+    def organisational_units(self):
         """
-        Gets the organisations of this WSClassifiedAuthorAssociation.
+        Gets the organisational_units of this WSClassifiedAuthorAssociation.
 
-        :return: The organisations of this WSClassifiedAuthorAssociation.
+        :return: The organisational_units of this WSClassifiedAuthorAssociation.
         :rtype: list[WSOrganisationRef]
         """
-        return self._organisations
+        return self._organisational_units
 
-    @organisations.setter
-    def organisations(self, organisations):
+    @organisational_units.setter
+    def organisational_units(self, organisational_units):
         """
-        Sets the organisations of this WSClassifiedAuthorAssociation.
+        Sets the organisational_units of this WSClassifiedAuthorAssociation.
 
-        :param organisations: The organisations of this WSClassifiedAuthorAssociation.
+        :param organisational_units: The organisational_units of this WSClassifiedAuthorAssociation.
         :type: list[WSOrganisationRef]
         """
 
-        self._organisations = organisations
+        self._organisational_units = organisational_units
 
     @property
     def external_organisations(self):

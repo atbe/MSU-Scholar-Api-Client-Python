@@ -13991,7 +13991,7 @@
         "name": {
           "$ref": "#/definitions/WSName"
         },
-        "personRoles": {
+        "personRole": {
           "type": "array",
           "xml": {
             "name": "personRole"
@@ -14000,7 +14000,7 @@
             "$ref": "#/definitions/WSClassification"
           }
         },
-        "organisations": {
+        "organisationalUnits": {
           "type": "array",
           "xml": {
             "name": "organisationalUnit",
@@ -14440,7 +14440,7 @@
         "link": {
           "$ref": "#/definitions/WSNavigationLink"
         },
-        "names": {
+        "name": {
           "type": "array",
           "xml": {
             "name": "name"
@@ -14449,7 +14449,7 @@
             "$ref": "#/definitions/WSLocalizedString"
           }
         },
-        "types": {
+        "type": {
           "type": "array",
           "xml": {
             "name": "type"
@@ -14955,7 +14955,7 @@
           },
           "default": false
         },
-        "publicationStatuses": {
+        "publicationStatus": {
           "type": "array",
           "xml": {
             "name": "publicationStatus"
@@ -16476,7 +16476,7 @@
         "link": {
           "$ref": "#/definitions/WSNavigationLink"
         },
-        "names": {
+        "name": {
           "type": "array",
           "xml": {
             "name": "name"
@@ -16485,7 +16485,7 @@
             "$ref": "#/definitions/WSLocalizedString"
           }
         },
-        "types": {
+        "type": {
           "type": "array",
           "xml": {
             "name": "type"
@@ -18063,7 +18063,7 @@
         "link": {
           "$ref": "#/definitions/WSNavigationLink"
         },
-        "names": {
+        "name": {
           "type": "array",
           "xml": {
             "name": "name"
@@ -18072,7 +18072,7 @@
             "$ref": "#/definitions/WSLocalizedString"
           }
         },
-        "types": {
+        "type": {
           "type": "array",
           "xml": {
             "name": "type"
@@ -18247,7 +18247,7 @@
         "link": {
           "$ref": "#/definitions/WSNavigationLink"
         },
-        "names": {
+        "name": {
           "type": "array",
           "xml": {
             "name": "name"
@@ -18256,7 +18256,7 @@
             "$ref": "#/definitions/WSLocalizedString"
           }
         },
-        "types": {
+        "type": {
           "type": "array",
           "xml": {
             "name": "type"
@@ -18451,7 +18451,7 @@
             "$ref": "#/definitions/WSClassifiedValue"
           }
         },
-        "employmentTypes": {
+        "employmentType": {
           "type": "array",
           "xml": {
             "name": "employmentType"
@@ -18470,7 +18470,7 @@
             "$ref": "#/definitions/WSClassifiedLocalizedValue"
           }
         },
-        "organisation": {
+        "organisationalUnit": {
           "xml": {
             "name": "organisationalUnit"
           },
@@ -18498,7 +18498,7 @@
             "$ref": "#/definitions/WSClassification"
           }
         },
-        "staffTypes": {
+        "staffType": {
           "type": "array",
           "xml": {
             "name": "staffType"
@@ -18916,7 +18916,7 @@
           "description": "Only available when the proper configuration is enabled",
           "$ref": "#/definitions/WSClassifiedAddress"
         },
-        "visibilities": {
+        "visibility": {
           "type": "array",
           "xml": {
             "name": "visibility"
@@ -21859,7 +21859,7 @@
             "attribute": true
           }
         },
-        "types": {
+        "type": {
           "type": "array",
           "xml": {
             "name": "type"
@@ -23031,7 +23031,7 @@
         "subTitle": {
           "type": "string"
         },
-        "types": {
+        "type": {
           "type": "array",
           "xml": {
             "name": "type"
@@ -23040,7 +23040,7 @@
             "$ref": "#/definitions/WSClassification"
           }
         },
-        "categories": {
+        "category": {
           "type": "array",
           "xml": {
             "name": "category"
@@ -23067,7 +23067,7 @@
             "$ref": "#/definitions/WSPublicationStatus"
           }
         },
-        "languages": {
+        "language": {
           "type": "array",
           "xml": {
             "name": "language"
@@ -23125,7 +23125,7 @@
             "$ref": "#/definitions/WSClassifiedAuthorAssociation"
           }
         },
-        "organisations": {
+        "organisationalUnits": {
           "type": "array",
           "xml": {
             "name": "organisationalUnit",

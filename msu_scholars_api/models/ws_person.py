@@ -66,7 +66,7 @@ class WSPerson(object):
         'will_take_phd_students': 'bool',
         'phd_research_projects': 'str',
         'private_address': 'WSClassifiedAddress',
-        'visibilities': 'list[WSVisibility]',
+        'visibility': 'list[WSVisibility]',
         'externalable_info': 'WSExternalableInformation',
         'info': 'WSContentInformation',
         'expert': 'bool'
@@ -108,13 +108,13 @@ class WSPerson(object):
         'will_take_phd_students': 'willTakePhdStudents',
         'phd_research_projects': 'phdResearchProjects',
         'private_address': 'privateAddress',
-        'visibilities': 'visibilities',
+        'visibility': 'visibility',
         'externalable_info': 'externalableInfo',
         'info': 'info',
         'expert': 'expert'
     }
 
-    def __init__(self, uuid=None, html_renderings=None, name=None, genders=None, date_of_birth=None, nationalities=None, name_variants=None, titles=None, classified_sources=None, orcid=None, profile_photos=None, links=None, start_date_as_researcher=None, retirement_date=None, profiled=False, scopus_h_index=None, profile_informations=None, student_organisation_associations=None, staff_organisation_associations=None, visiting_scholar_organisation_associations=None, honorary_staff_organisation_associations=None, supervisor_for_relations=None, leave_of_absence=None, employee_start_date=None, employee_end_date=None, fte=None, affiliation_note=None, external_positions=None, educations=None, professional_qualifications=None, keyword_groups=None, field_of_research_associations=None, will_take_phd_students=False, phd_research_projects=None, private_address=None, visibilities=None, externalable_info=None, info=None, expert=False):
+    def __init__(self, uuid=None, html_renderings=None, name=None, genders=None, date_of_birth=None, nationalities=None, name_variants=None, titles=None, classified_sources=None, orcid=None, profile_photos=None, links=None, start_date_as_researcher=None, retirement_date=None, profiled=False, scopus_h_index=None, profile_informations=None, student_organisation_associations=None, staff_organisation_associations=None, visiting_scholar_organisation_associations=None, honorary_staff_organisation_associations=None, supervisor_for_relations=None, leave_of_absence=None, employee_start_date=None, employee_end_date=None, fte=None, affiliation_note=None, external_positions=None, educations=None, professional_qualifications=None, keyword_groups=None, field_of_research_associations=None, will_take_phd_students=False, phd_research_projects=None, private_address=None, visibility=None, externalable_info=None, info=None, expert=False):
         """
         WSPerson - a model defined in Swagger
         """
@@ -154,7 +154,7 @@ class WSPerson(object):
         self._will_take_phd_students = None
         self._phd_research_projects = None
         self._private_address = None
-        self._visibilities = None
+        self._visibility = None
         self._externalable_info = None
         self._info = None
         self._expert = None
@@ -229,8 +229,8 @@ class WSPerson(object):
           self.phd_research_projects = phd_research_projects
         if private_address is not None:
           self.private_address = private_address
-        if visibilities is not None:
-          self.visibilities = visibilities
+        if visibility is not None:
+          self.visibility = visibility
         if externalable_info is not None:
           self.externalable_info = externalable_info
         if info is not None:
@@ -994,25 +994,25 @@ class WSPerson(object):
         self._private_address = private_address
 
     @property
-    def visibilities(self):
+    def visibility(self):
         """
-        Gets the visibilities of this WSPerson.
+        Gets the visibility of this WSPerson.
 
-        :return: The visibilities of this WSPerson.
+        :return: The visibility of this WSPerson.
         :rtype: list[WSVisibility]
         """
-        return self._visibilities
+        return self._visibility
 
-    @visibilities.setter
-    def visibilities(self, visibilities):
+    @visibility.setter
+    def visibility(self, visibility):
         """
-        Sets the visibilities of this WSPerson.
+        Sets the visibility of this WSPerson.
 
-        :param visibilities: The visibilities of this WSPerson.
+        :param visibility: The visibility of this WSPerson.
         :type: list[WSVisibility]
         """
 
-        self._visibilities = visibilities
+        self._visibility = visibility
 
     @property
     def externalable_info(self):
