@@ -17,7 +17,7 @@ Name | Type | Description | Notes
 **translated_sub_titles** | [**list[WSLocalizedString]**](WSLocalizedString.md) |  | [optional] 
 **number_of_pages** | **int** |  | [optional] 
 **field_of_research_associations** | [**list[WSERA2015FieldOfResearchAssociation]**](WSERA2015FieldOfResearchAssociation.md) | Only available when the ERA module is enabled | [optional] 
-**abstracts** | [**list[WSLocalizedString]**](WSLocalizedString.md) |  | [optional] 
+**abstract** | **list[str]** |  | [optional] 
 **person_associations** | [**list[WSClassifiedAuthorAssociation]**](WSClassifiedAuthorAssociation.md) |  | [optional] 
 **organisations** | [**list[WSOrganisationRef]**](WSOrganisationRef.md) |  | [optional] 
 **external_organisations** | [**list[WSExternalOrganisationRef]**](WSExternalOrganisationRef.md) |  | [optional] 

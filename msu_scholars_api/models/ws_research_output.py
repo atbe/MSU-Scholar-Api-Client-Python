@@ -45,7 +45,7 @@ class WSResearchOutput(object):
         'translated_sub_titles': 'list[WSLocalizedString]',
         'number_of_pages': 'int',
         'field_of_research_associations': 'list[WSERA2015FieldOfResearchAssociation]',
-        'abstracts': 'list[WSLocalizedString]',
+        'abstract': 'list[str]',
         'person_associations': 'list[WSClassifiedAuthorAssociation]',
         'organisations': 'list[WSOrganisationRef]',
         'external_organisations': 'list[WSExternalOrganisationRef]',
@@ -97,7 +97,7 @@ class WSResearchOutput(object):
         'translated_sub_titles': 'translatedSubTitles',
         'number_of_pages': 'numberOfPages',
         'field_of_research_associations': 'fieldOfResearchAssociations',
-        'abstracts': 'abstracts',
+        'abstract': 'abstract',
         'person_associations': 'personAssociations',
         'organisations': 'organisations',
         'external_organisations': 'externalOrganisations',
@@ -134,7 +134,7 @@ class WSResearchOutput(object):
         'article_processing_charge_amount': 'articleProcessingChargeAmount'
     }
 
-    def __init__(self, uuid=None, html_renderings=None, title=None, sub_title=None, types=None, categories=None, peer_review=False, international_peer_review=False, publication_statuses=None, languages=None, translated_titles=None, translated_sub_titles=None, number_of_pages=None, field_of_research_associations=None, abstracts=None, person_associations=None, organisations=None, external_organisations=None, managing_organisational_unit=None, open_access_permissions=None, open_access_embargo_months=None, open_access_embargo_date=None, submission_year=None, main_research_area=None, electronic_versions=None, additional_files=None, links=None, article_processing_charge_paid=False, article_processing_charge_amount_in_article_processing_charge_currency=None, article_processing_charges_currency=None, keyword_groups=None, bibliographical_notes=None, descriptions=None, related_research_outputs=None, related_activities=None, related_press_media=None, related_impacts=None, related_projects=None, related_data_sets=None, related_prizes=None, related_student_theses=None, confidential=False, visibilities=None, workflows=None, externalable_info=None, info=None, total_scopus_citations=None, scopus_metrics=None, article_processing_charge_amount=None):
+    def __init__(self, uuid=None, html_renderings=None, title=None, sub_title=None, types=None, categories=None, peer_review=False, international_peer_review=False, publication_statuses=None, languages=None, translated_titles=None, translated_sub_titles=None, number_of_pages=None, field_of_research_associations=None, abstract=None, person_associations=None, organisations=None, external_organisations=None, managing_organisational_unit=None, open_access_permissions=None, open_access_embargo_months=None, open_access_embargo_date=None, submission_year=None, main_research_area=None, electronic_versions=None, additional_files=None, links=None, article_processing_charge_paid=False, article_processing_charge_amount_in_article_processing_charge_currency=None, article_processing_charges_currency=None, keyword_groups=None, bibliographical_notes=None, descriptions=None, related_research_outputs=None, related_activities=None, related_press_media=None, related_impacts=None, related_projects=None, related_data_sets=None, related_prizes=None, related_student_theses=None, confidential=False, visibilities=None, workflows=None, externalable_info=None, info=None, total_scopus_citations=None, scopus_metrics=None, article_processing_charge_amount=None):
         """
         WSResearchOutput - a model defined in Swagger
         """
@@ -153,7 +153,7 @@ class WSResearchOutput(object):
         self._translated_sub_titles = None
         self._number_of_pages = None
         self._field_of_research_associations = None
-        self._abstracts = None
+        self._abstract = None
         self._person_associations = None
         self._organisations = None
         self._external_organisations = None
@@ -217,8 +217,8 @@ class WSResearchOutput(object):
           self.number_of_pages = number_of_pages
         if field_of_research_associations is not None:
           self.field_of_research_associations = field_of_research_associations
-        if abstracts is not None:
-          self.abstracts = abstracts
+        if abstract is not None:
+          self.abstract = abstract
         if person_associations is not None:
           self.person_associations = person_associations
         if organisations is not None:
@@ -585,25 +585,25 @@ class WSResearchOutput(object):
         self._field_of_research_associations = field_of_research_associations
 
     @property
-    def abstracts(self):
+    def abstract(self):
         """
-        Gets the abstracts of this WSResearchOutput.
+        Gets the abstract of this WSResearchOutput.
 
-        :return: The abstracts of this WSResearchOutput.
-        :rtype: list[WSLocalizedString]
+        :return: The abstract of this WSResearchOutput.
+        :rtype: list[str]
         """
-        return self._abstracts
+        return self._abstract
 
-    @abstracts.setter
-    def abstracts(self, abstracts):
+    @abstract.setter
+    def abstract(self, abstract):
         """
-        Sets the abstracts of this WSResearchOutput.
+        Sets the abstract of this WSResearchOutput.
 
-        :param abstracts: The abstracts of this WSResearchOutput.
-        :type: list[WSLocalizedString]
+        :param abstract: The abstract of this WSResearchOutput.
+        :type: list[str]
         """
 
-        self._abstracts = abstracts
+        self._abstract = abstract
 
     @property
     def person_associations(self):

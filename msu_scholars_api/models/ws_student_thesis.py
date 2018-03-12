@@ -39,7 +39,7 @@ class WSStudentThesis(object):
         'sub_title': 'str',
         'translated_titles': 'list[WSLocalizedString]',
         'translated_sub_titles': 'list[WSLocalizedString]',
-        'abstracts': 'list[WSLocalizedString]',
+        'abstract': 'list[str]',
         'person_associations': 'list[WSClassifiedAuthorAssociation]',
         'organisations': 'list[WSOrganisationRef]',
         'external_organisations': 'list[WSExternalOrganisationRef]',
@@ -75,7 +75,7 @@ class WSStudentThesis(object):
         'sub_title': 'subTitle',
         'translated_titles': 'translatedTitles',
         'translated_sub_titles': 'translatedSubTitles',
-        'abstracts': 'abstracts',
+        'abstract': 'abstract',
         'person_associations': 'personAssociations',
         'organisations': 'organisations',
         'external_organisations': 'externalOrganisations',
@@ -102,7 +102,7 @@ class WSStudentThesis(object):
         'externalable_info': 'externalableInfo'
     }
 
-    def __init__(self, uuid=None, html_renderings=None, types=None, languages=None, title=None, sub_title=None, translated_titles=None, translated_sub_titles=None, abstracts=None, person_associations=None, organisations=None, external_organisations=None, managing_organisational_unit=None, supervisors=None, award_date=None, awarding_institutions=None, sponsors=None, keyword_groups=None, documents=None, links=None, bibliographical_notes=None, related_research_outputs=None, related_activities=None, related_press_media=None, related_impacts=None, related_projects=None, related_data_sets=None, related_prizes=None, workflows=None, confidential=False, visibilities=None, info=None, externalable_info=None):
+    def __init__(self, uuid=None, html_renderings=None, types=None, languages=None, title=None, sub_title=None, translated_titles=None, translated_sub_titles=None, abstract=None, person_associations=None, organisations=None, external_organisations=None, managing_organisational_unit=None, supervisors=None, award_date=None, awarding_institutions=None, sponsors=None, keyword_groups=None, documents=None, links=None, bibliographical_notes=None, related_research_outputs=None, related_activities=None, related_press_media=None, related_impacts=None, related_projects=None, related_data_sets=None, related_prizes=None, workflows=None, confidential=False, visibilities=None, info=None, externalable_info=None):
         """
         WSStudentThesis - a model defined in Swagger
         """
@@ -115,7 +115,7 @@ class WSStudentThesis(object):
         self._sub_title = None
         self._translated_titles = None
         self._translated_sub_titles = None
-        self._abstracts = None
+        self._abstract = None
         self._person_associations = None
         self._organisations = None
         self._external_organisations = None
@@ -157,8 +157,8 @@ class WSStudentThesis(object):
           self.translated_titles = translated_titles
         if translated_sub_titles is not None:
           self.translated_sub_titles = translated_sub_titles
-        if abstracts is not None:
-          self.abstracts = abstracts
+        if abstract is not None:
+          self.abstract = abstract
         if person_associations is not None:
           self.person_associations = person_associations
         if organisations is not None:
@@ -377,25 +377,25 @@ class WSStudentThesis(object):
         self._translated_sub_titles = translated_sub_titles
 
     @property
-    def abstracts(self):
+    def abstract(self):
         """
-        Gets the abstracts of this WSStudentThesis.
+        Gets the abstract of this WSStudentThesis.
 
-        :return: The abstracts of this WSStudentThesis.
-        :rtype: list[WSLocalizedString]
+        :return: The abstract of this WSStudentThesis.
+        :rtype: list[str]
         """
-        return self._abstracts
+        return self._abstract
 
-    @abstracts.setter
-    def abstracts(self, abstracts):
+    @abstract.setter
+    def abstract(self, abstract):
         """
-        Sets the abstracts of this WSStudentThesis.
+        Sets the abstract of this WSStudentThesis.
 
-        :param abstracts: The abstracts of this WSStudentThesis.
-        :type: list[WSLocalizedString]
+        :param abstract: The abstract of this WSStudentThesis.
+        :type: list[str]
         """
 
-        self._abstracts = abstracts
+        self._abstract = abstract
 
     @property
     def person_associations(self):

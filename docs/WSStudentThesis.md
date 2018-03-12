@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **sub_title** | **str** |  | [optional] 
 **translated_titles** | [**list[WSLocalizedString]**](WSLocalizedString.md) |  | [optional] 
 **translated_sub_titles** | [**list[WSLocalizedString]**](WSLocalizedString.md) |  | [optional] 
-**abstracts** | [**list[WSLocalizedString]**](WSLocalizedString.md) |  | [optional] 
+**abstract** | **list[str]** |  | [optional] 
 **person_associations** | [**list[WSClassifiedAuthorAssociation]**](WSClassifiedAuthorAssociation.md) |  | [optional] 
 **organisations** | [**list[WSOrganisationRef]**](WSOrganisationRef.md) |  | [optional] 
 **external_organisations** | [**list[WSExternalOrganisationRef]**](WSExternalOrganisationRef.md) |  | [optional] 
